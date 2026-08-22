@@ -49,6 +49,7 @@ echo "准备部署目录..."
 rm -rf dist
 mkdir -p dist
 cp index.html dist/
+cp 長楽炉端烧_品牌Logo_轻松版.jpg dist/
 cp 長楽炉端烧_包装系统主视觉_轻松版.jpg dist/
 cp 長楽炉端烧_外卖袋效果图_轻松版.jpg dist/
 cp 長楽炉端烧_打包餐盒效果图_轻松版.jpg dist/
