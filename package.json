@@ -1,0 +1,15 @@
+{
+  "name": "6a86b9e8aac43877c38ddaa0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cloudbase/cli": "^3.8.0"
+  }
+}
