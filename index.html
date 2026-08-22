@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>長楽炉端烧 · 轻松版包装系统</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #f7f2e9;
+  color: #3d2e22;
+  line-height: 1.7;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #e8dcc8 0%, #f2e9db 50%, #f7f2e9 100%);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle at 50% 40%, rgba(181, 58, 43, 0.06) 0%, transparent 55%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 1; }
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #8b3a2b;
+  margin-bottom: 12px;
+  letter-spacing: 14px;
+}
+.hero .tagline {
+  display: inline-block;
+  font-size: 22px;
+  color: #6b5643;
+  letter-spacing: 6px;
+  margin-bottom: 28px;
+  padding: 8px 28px;
+  border: 1px solid rgba(139, 58, 43, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.6);
+}
+.hero p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #7d6a58;
+  font-size: 15px;
+}
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.color { text-align: center; }
+.color .dot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 2px solid rgba(61, 46, 34, 0.1);
+  box-shadow: 0 4px 12px rgba(61, 46, 34, 0.06);
+}
+.color span {
+  display: block;
+  font-size: 13px;
+  color: #6b5643;
+  font-weight: 500;
+}
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-title h2 {
+  font-size: 32px;
+  color: #8b3a2b;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+.section-title p {
+  color: #9c8a78;
+  font-size: 14px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 32px;
+}
+.card {
+  background: #fffbf5;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(139, 58, 43, 0.1);
+  box-shadow: 0 8px 24px rgba(61, 46, 34, 0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(61, 46, 34, 0.1);
+}
+.card .img-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #efe8dc;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card:hover img { transform: scale(1.03); }
+.card .info {
+  padding: 24px;
+}
+.card .info h3 {
+  font-size: 20px;
+  color: #8b3a2b;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+.card .info p {
+  font-size: 14px;
+  color: #7d6a58;
+}
+.card .badge {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #b53a2b;
+  background: rgba(181, 58, 43, 0.08);
+  border-radius: 999px;
+}
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  color: #9c8a78;
+  font-size: 14px;
+  border-top: 1px solid rgba(61, 46, 34, 0.08);
+  background: #efe8dc;
+}
+.footer .brand {
+  font-size: 20px;
+  color: #8b3a2b;
+  letter-spacing: 6px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 42px; letter-spacing: 8px; }
+  .hero .tagline { font-size: 16px; letter-spacing: 3px; }
+  .gallery { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <h1>長楽</h1>
+    <div class="tagline">一串入魂</div>
+    <p>轻松版完整包装系统：以暖棕牛皮纸为底，墨色书法作字，朱红印章点睛，在火气与轻松之间找到平衡。</p>
+    <div class="colors">
+      <div class="color"><div class="dot" style="background:#c8a97e"></div><span>牛皮纸棕</span></div>
+      <div class="color"><div class="dot" style="background:#3d2e22"></div><span>墨色字</span></div>
+      <div class="color"><div class="dot" style="background:#b53a2b"></div><span>朱红印章</span></div>
+      <div class="color"><div class="dot" style="background:#f7f2e9"></div><span>米白底</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    <h2>包装全览</h2>
+    <p>主视觉 · 外卖袋 · 打包餐盒 · 杯套 · 筷子套 · 湿巾包装 · 牙签旗 · 封口贴</p>
+  </div>
+  <div class="gallery">
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_包装系统主视觉_轻松版.jpg" alt="主视觉"></div>
+      <div class="info">
+        <h3>主视觉</h3>
+        <p>轻松版包装系统核心视觉，牛皮纸底配烟火气。</p>
+        <span class="badge">主视觉</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_外卖袋效果图_轻松版.jpg" alt="外卖袋"></div>
+      <div class="info">
+        <h3>外卖袋</h3>
+        <p>日常外带场景的主力包装，轻松又有辨识度。</p>
+        <span class="badge">外带</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_打包餐盒效果图_轻松版.jpg" alt="打包餐盒"></div>
+      <div class="info">
+        <h3>打包餐盒</h3>
+        <p>餐盒贴/封套设计，保留手作温度。</p>
+        <span class="badge">餐食</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_杯套效果图_轻松版.jpg" alt="杯套"></div>
+      <div class="info">
+        <h3>杯套</h3>
+        <p>饮品杯套，牛皮纸质感，随手拍也好看。</p>
+        <span class="badge">饮品</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_筷子套效果图_轻松版.jpg" alt="筷子套"></div>
+      <div class="info">
+        <h3>筷子套</h3>
+        <p>细长版筷子套，字号与留白已做安全边距处理。</p>
+        <span class="badge">餐具</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_湿巾包装效果图_轻松版.jpg" alt="湿巾包装"></div>
+      <div class="info">
+        <h3>湿巾包装</h3>
+        <p>单片湿巾袋，火焰纹与书法结合。</p>
+        <span class="badge">小物</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_牙签旗效果图_轻松版.jpg" alt="牙签旗"></div>
+      <div class="info">
+        <h3>牙签旗</h3>
+        <p>烧鸟签小旗，营造居酒屋氛围感。</p>
+        <span class="badge">点缀</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_封口贴效果图_轻松版.jpg" alt="封口贴"></div>
+      <div class="info">
+        <h3>封口贴</h3>
+        <p>圆贴与矩形贴组合，用于餐盒、袋子封口。</p>
+        <span class="badge">封口</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="brand">長楽 · 烧鸟居酒屋 · 炉端烧</div>
+  <p>新辰里学清路店 · 一串入魂</p>
+</div>
+</body>
+</html>
