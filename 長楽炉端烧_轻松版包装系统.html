@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>長楽炉端烧 · 轻松版包装系统</title>
+<title>長楽炉端烧 · 轻松版品牌视觉系统</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -80,17 +80,19 @@ body {
 .section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 20px;
+  padding: 72px 20px;
+}
+.section + .section {
+  border-top: 1px solid rgba(139, 58, 43, 0.08);
 }
 .section-title {
-  text-align: center;
   margin-bottom: 48px;
 }
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   color: #8b3a2b;
   letter-spacing: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .section-title p {
   color: #9c8a78;
@@ -98,9 +100,10 @@ body {
 }
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
 }
+.gallery.two-col { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
 .card {
   background: #fffbf5;
   border-radius: 20px;
@@ -126,10 +129,10 @@ body {
 }
 .card:hover img { transform: scale(1.03); }
 .card .info {
-  padding: 24px;
+  padding: 22px;
 }
 .card .info h3 {
-  font-size: 20px;
+  font-size: 19px;
   color: #8b3a2b;
   margin-bottom: 8px;
   letter-spacing: 2px;
@@ -166,6 +169,7 @@ body {
   .hero h1 { font-size: 42px; letter-spacing: 8px; }
   .hero .tagline { font-size: 16px; letter-spacing: 3px; }
   .gallery { grid-template-columns: 1fr; }
+  .gallery.two-col { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -174,7 +178,7 @@ body {
   <div class="hero-content">
     <h1>長楽</h1>
     <div class="tagline">一串入魂</div>
-    <p>轻松版完整包装系统：以暖棕牛皮纸为底，墨色书法作字，朱红印章点睛，在火气与轻松之间找到平衡。</p>
+    <p>轻松版完整视觉系统：以暖棕牛皮纸为底，墨色书法作字，朱红印章点睛，在火气与轻松之间找到平衡。</p>
     <div class="colors">
       <div class="color"><div class="dot" style="background:#c8a97e"></div><span>牛皮纸棕</span></div>
       <div class="color"><div class="dot" style="background:#3d2e22"></div><span>墨色字</span></div>
@@ -186,18 +190,27 @@ body {
 
 <div class="section">
   <div class="section-title">
-    <h2>品牌视觉全览</h2>
-    <p>包装 · 餐具 · 服装 · 礼遇</p>
+    <h2>01 · 品牌主视觉</h2>
+    <p>核心视觉与调性基准</p>
   </div>
-  <div class="gallery">
+  <div class="gallery two-col">
     <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_包装系统主视觉_轻松版.jpg" alt="主视觉"></div>
       <div class="info">
         <h3>主视觉</h3>
-        <p>轻松版包装系统核心视觉，牛皮纸底配烟火气。</p>
-        <span class="badge">主视觉</span>
+        <p>轻松版包装系统核心视觉，牛皮纸底配烟火气，奠定整体品牌调性。</p>
+        <span class="badge">品牌核心</span>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    <h2>02 · 外带包装</h2>
+    <p>外卖、打包、外带饮品场景</p>
+  </div>
+  <div class="gallery">
     <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_外卖袋效果图_轻松版.jpg" alt="外卖袋"></div>
       <div class="info">
@@ -223,19 +236,44 @@ body {
       </div>
     </div>
     <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_封口贴效果图_轻松版.jpg" alt="封口贴"></div>
+      <div class="info">
+        <h3>封口贴</h3>
+        <p>圆贴与矩形贴组合，用于餐盒、袋子封口。</p>
+        <span class="badge">封口</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    <h2>03 · 店内餐具</h2>
+    <p>堂食桌面细节</p>
+  </div>
+  <div class="gallery">
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_用餐碗效果图_轻松版.jpg" alt="用餐碗"></div>
+      <div class="info">
+        <h3>用餐碗</h3>
+        <p>店内用餐米饭碗，炭黑釉面配火焰烧鸟图案。</p>
+        <span class="badge">餐具</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img-wrap"><img src="長楽炉端烧_用餐盘效果图_轻松版.jpg" alt="用餐盘"></div>
+      <div class="info">
+        <h3>用餐盘</h3>
+        <p>店内用餐平盘，米白芝麻釉配火焰标识。</p>
+        <span class="badge">餐具</span>
+      </div>
+    </div>
+    <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_筷子套效果图_轻松版.jpg" alt="筷子套"></div>
       <div class="info">
         <h3>筷子套</h3>
         <p>细长版筷子套，字号与留白已做安全边距处理。</p>
         <span class="badge">餐具</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="img-wrap"><img src="長楽炉端烧_湿巾包装效果图_轻松版.jpg" alt="湿巾包装"></div>
-      <div class="info">
-        <h3>湿巾包装</h3>
-        <p>单片湿巾袋，火焰纹与书法结合。</p>
-        <span class="badge">小物</span>
       </div>
     </div>
     <div class="card">
@@ -247,13 +285,22 @@ body {
       </div>
     </div>
     <div class="card">
-      <div class="img-wrap"><img src="長楽炉端烧_封口贴效果图_轻松版.jpg" alt="封口贴"></div>
+      <div class="img-wrap"><img src="長楽炉端烧_湿巾包装效果图_轻松版.jpg" alt="湿巾包装"></div>
       <div class="info">
-        <h3>封口贴</h3>
-        <p>圆贴与矩形贴组合，用于餐盒、袋子封口。</p>
-        <span class="badge">封口</span>
+        <h3>湿巾包装</h3>
+        <p>单片湿巾袋，火焰纹与书法结合。</p>
+        <span class="badge">小物</span>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    <h2>04 · 顾客礼遇</h2>
+    <p>到店、生日、感恩等情感触点</p>
+  </div>
+  <div class="gallery">
     <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_首次到店礼袋效果图_轻松版.jpg" alt="首次到店礼袋"></div>
       <div class="info">
@@ -278,28 +325,21 @@ body {
         <span class="badge">留客</span>
       </div>
     </div>
-    <div class="card">
-      <div class="img-wrap"><img src="長楽炉端烧_用餐碗效果图_轻松版.jpg" alt="用餐碗"></div>
-      <div class="info">
-        <h3>用餐碗</h3>
-        <p>店内用餐米饭碗，炭黑釉面配火焰烧鸟图案。</p>
-        <span class="badge">餐具</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="img-wrap"><img src="長楽炉端烧_用餐盘效果图_轻松版.jpg" alt="用餐盘"></div>
-      <div class="info">
-        <h3>用餐盘</h3>
-        <p>店内用餐平盘，米白芝麻釉配火焰标识。</p>
-        <span class="badge">餐具</span>
-      </div>
-    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">
+    <h2>05 · 员工服装</h2>
+    <p>厨师、服务员、店长</p>
+  </div>
+  <div class="gallery">
     <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_厨师服装效果图_轻松版.jpg" alt="厨师服装"></div>
       <div class="info">
         <h3>厨师服装</h3>
-        <p>炭黑厨师服配白色头巾，火焰标志点睛。</p>
-        <span class="badge">服装</span>
+        <p>炭黑厨师服配中式盘扣与祥云纹围裙，书法+印章点睛。</p>
+        <span class="badge">后厨</span>
       </div>
     </div>
     <div class="card">
@@ -307,15 +347,15 @@ body {
       <div class="info">
         <h3>服务员服装</h3>
         <p>黑衬衫配卡其色围裙，轻松有辨识度。</p>
-        <span class="badge">服装</span>
+        <span class="badge">前厅</span>
       </div>
     </div>
     <div class="card">
       <div class="img-wrap"><img src="長楽炉端烧_店长服装效果图_轻松版.jpg" alt="店长服装"></div>
       <div class="info">
         <h3>店长服装</h3>
-        <p>黑衬衫配深色长围裙，更正式但不刻板。</p>
-        <span class="badge">服装</span>
+        <p>黑衬衫配焦糖棕马甲，无围裙设计，更正式更有管理感。</p>
+        <span class="badge">管理</span>
       </div>
     </div>
   </div>
