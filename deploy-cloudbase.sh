@@ -52,6 +52,9 @@ cp index.html dist/
 cp 長楽炉端烧_品牌Logo_轻松版.jpg dist/
 cp 長楽炉端烧_包装系统主视觉_轻松版.jpg dist/
 cp 長楽炉端烧_外卖袋效果图_轻松版.jpg dist/
+cp 長楽炉端烧_外卖袋效果图_含Logo.jpg dist/
+cp 長楽炉端烧_打包餐盒效果图_含Logo.jpg dist/
+cp 長楽炉端烧_首次到店礼袋效果图_含Logo.jpg dist/
 cp 長楽炉端烧_打包餐盒效果图_轻松版.jpg dist/
 cp 長楽炉端烧_杯套效果图_轻松版.jpg dist/
 cp 長楽炉端烧_筷子套效果图_轻松版.jpg dist/
